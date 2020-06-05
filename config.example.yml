@@ -4,7 +4,7 @@ APIPort: :3000
 
 Domain: redzilla.localhost
 
-ImageName: docker.io/nodered/node-red:latest
+ImageName: nodered/node-red
 StorePath: ./data/store
 
 # Mounted to /data, will be ${InstanceDataPath}/${InstanceName} with instance name in path

@@ -2,13 +2,13 @@ version: '3'
 
 services:
   redzilla:
-    image: opny/redzilla
+    image: emuanalytics/redzilla
     environment:
       DOCKER_API_VERSION: 1.39
       # compose created network name
       REDZILLA_NETWORK: redzilla_redzilla
       REDZILLA_DOMAIN: redzilla.localhost
-      REDZILLA_IMAGENAME: docker.io/nodered/node-red:latest
+      REDZILLA_IMAGENAME: nodered/node-red
     networks:
       - redzilla
     ports:

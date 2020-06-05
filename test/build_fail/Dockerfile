@@ -1,2 +1,2 @@
-FROM nodered/node-red:latest
+FROM nodered/node-red
 RUN fail command

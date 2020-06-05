@@ -22,7 +22,7 @@ Done!
 
 `ImageName` option allow to use local or remote custom images. Example:
 
-- `ImageName: docker.io/nodered/node-red:latest` Use the latest online version
+- `ImageName: nodered/node-red` Use the latest online version
 - `ImageName: mycustom/nodered:latest` Use the `mycustom/nodered` local image
 
 

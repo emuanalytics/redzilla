@@ -53,7 +53,7 @@ func TestStartContainerRemote(t *testing.T) {
 	containerName := "container_redz_test"
 	cfg := &model.Config{
 		Network:            "redzilla_test",
-		ImageName:          "nodered/node-red:latest",
+		ImageName:          "nodered/node-red",
 		InstanceConfigPath: "../data/test",
 		InstanceDataPath:   "../data/test",
 		InstanceLogPath:   "../data/test"
