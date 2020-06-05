@@ -24,6 +24,7 @@ func TestAPI(t *testing.T) {
 	cfg.Autostart = true
 	cfg.StorePath = "../test/data/store"
 	cfg.InstanceDataPath = "../test/data/instances"
+	cfg.InstanceLogPath = "../test/data/instances"
 	cfg.InstanceConfigPath = "../test/data/config"
 
 	defer CloseInstanceLoggers()

@@ -54,9 +54,12 @@ func NewInstance(name string, cfg *model.Config) *Instance {
 	datadir := storage.GetInstancesDataPath(name, cfg)
 	storage.CreateDir(datadir)
 
-	instanceLogger, err := NewInstanceLogger(name, datadir)
+	logdir := storage.GetInstancesLogPath(name, cfg)
+	storage.CreateDir(logdir)
+
+	instanceLogger, err := NewInstanceLogger(name, logdir)
 	if err != nil {
-		logrus.Errorf("Failed to initialize instance %s logger at %s", name, datadir)
+		logrus.Errorf("Failed to initialize instance %s logger at %s", name, logdir)
 		panic(err)
 	}
 

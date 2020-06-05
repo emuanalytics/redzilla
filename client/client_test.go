@@ -17,9 +17,10 @@ func startContainer(t *testing.T) (*types.ContainerJSON, func()) {
 	containerName := "container_redz_test_api"
 	cfg := &model.Config{
 		Network:            "redzilla_test",
-		ImageName:          "nodered/node-red-docker:latest",
+		ImageName:          "nodered/node-red:latest",
 		InstanceConfigPath: "../data/test",
 		InstanceDataPath:   "../data/test",
+		InstanceLogPath:   "../data/test",
 		Autostart:          true,
 	}
 

@@ -10,6 +10,7 @@ type Config struct {
 	ImageName          string
 	StorePath          string
 	InstanceDataPath   string
+	InstanceLogPath    string
 	InstanceConfigPath string
 	LogLevel           string
 	Autostart          bool

@@ -15,9 +15,10 @@ func Init() error {
 	viper.SetDefault("Network", "redzilla")
 	viper.SetDefault("APIPort", ":3000")
 	viper.SetDefault("Domain", "redzilla.localhost")
-	viper.SetDefault("ImageName", "nodered/node-red-docker")
+	viper.SetDefault("ImageName", "nodered/node-red")
 	viper.SetDefault("StorePath", "./data/store")
 	viper.SetDefault("InstanceDataPath", "./data/instances")
+	viper.SetDefault("InstanceLogPath", "./data/instances")
 	viper.SetDefault("InstanceConfigPath", "./data/config")
 	viper.SetDefault("LogLevel", "info")
 	viper.SetDefault("Autostart", false)
@@ -56,6 +57,7 @@ func GetApiConfig() (*model.Config, error) {
 		ImageName:          viper.GetString("ImageName"),
 		StorePath:          viper.GetString("StorePath"),
 		InstanceDataPath:   viper.GetString("InstanceDataPath"),
+		InstanceLogPath:   viper.GetString("InstanceLogPath"),
 		InstanceConfigPath: viper.GetString("InstanceConfigPath"),
 		LogLevel:           viper.GetString("LogLevel"),
 		Autostart:          viper.GetBool("Autostart"),

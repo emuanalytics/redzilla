@@ -22,7 +22,7 @@ Done!
 
 `ImageName` option allow to use local or remote custom images. Example:
 
-- `ImageName: docker.io/nodered/node-red-docker:latest` Use the latest online version
+- `ImageName: docker.io/nodered/node-red:latest` Use the latest online version
 - `ImageName: mycustom/nodered:latest` Use the `mycustom/nodered` local image
 
 
@@ -37,7 +37,8 @@ See `config.example.yml` for configuration options.
 - `REDZILLA_DOMAIN` (default: `redzilla.localhost`) set the base domain to listen for
 - `REDZILLA_IMAGENAME` (default: `nodered/node-red-docker`) changes the `node-red` image to be spawn (must be somehow compatible to the official one)
 - `REDZILLA_STOREPATH` (default: `./data/store`) file store for the container runtime metadata
-- `REDZILLA_INSTANCEDATAPATH` (default: `./data/instances`) container instaces data (like setting.js and flows.json)
+- `REDZILLA_INSTANCEDATAPATH` (default: `./data/instances`) container instances data (like setting.js and flows.json)
+- `REDZILLA_INSTANCELOGPATH` (default: `./data/instances`) container instance logs
 - `REDZILLA_LOGLEVEL` (default: `info`) log level detail
 - `REDZILLA_AUTOSTART` (default: `false`) allow to create a new instance when reaching an activable subdomain
 - `REDZILLA_ENVPREFIX` (empty by default) filter environment variables by prefix and pass to the created instance.

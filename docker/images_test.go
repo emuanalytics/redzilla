@@ -10,7 +10,7 @@ func TestEnsureRemoteImage(t *testing.T) {
 
 	logrus.SetLevel(logrus.DebugLevel)
 
-	imageName := "docker.io/nodered/node-red-docker:latest"
+	imageName := "docker.io/nodered/node-red:latest"
 
 	err := EnsureImage(imageName)
 	if err != nil {

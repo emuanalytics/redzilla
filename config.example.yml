@@ -4,11 +4,14 @@ APIPort: :3000
 
 Domain: redzilla.localhost
 
-ImageName: docker.io/nodered/node-red-docker:latest
+ImageName: docker.io/nodered/node-red:latest
 StorePath: ./data/store
 
 # Mounted to /data, will be ${InstanceDataPath}/${InstanceName} with instance name in path
 InstanceDataPath: ./data/instances
+
+# Path to store instance logs
+InstanceLogPath: ./data/instances
 
 # Mounted to /config, will be ${InstanceConfigPath} with no instance name specialization
 InstanceConfigPath: ./data/config

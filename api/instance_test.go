@@ -21,6 +21,7 @@ func TestInstance(t *testing.T) {
 	cfg.Network = "redzilla_test"
 	cfg.StorePath = "../test/data/store"
 	cfg.InstanceDataPath = "../test/data/instances"
+	cfg.InstanceLogPath = "../test/data/instances"
 	cfg.InstanceConfigPath = "../test/data/config"
 
 	i := NewInstance(fmt.Sprintf("test_%d", time.Now().Unix()), cfg)
