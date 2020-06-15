@@ -7,7 +7,7 @@ replace github.com/docker/docker => github.com/docker/engine v0.0.0-201907171610
 require (
 	github.com/Microsoft/go-winio v0.4.11 // indirect
 	github.com/containerd/continuity v0.0.0-20200413184840-d3ef23f19fbb // indirect
-	github.com/ddliu/go-httpclient v0.5.1 // indirect
+	github.com/ddliu/go-httpclient v0.5.1
 	github.com/docker/distribution v2.7.1+incompatible // indirect
 	github.com/docker/docker v1.13.1
 	github.com/docker/go-connections v0.4.0
@@ -27,6 +27,7 @@ require (
 	github.com/pkg/errors v0.8.1 // indirect
 	github.com/sirupsen/logrus v1.3.0
 	github.com/spf13/viper v1.3.1
+	github.com/stretchr/testify v1.4.0
 	golang.org/x/net v0.0.0-20190311183353-d8887717615a
 	google.golang.org/grpc v1.29.1 // indirect
 	gopkg.in/go-playground/validator.v8 v8.18.2 // indirect

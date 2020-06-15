@@ -43,7 +43,11 @@ func extractSubdomain(host string, cfg *model.Config) string {
 	if len(host) == 0 {
 		return ""
 	}
-	hostname := host[:strings.Index(host, ":")]
+	hostname := host
+	portLoc := strings.Index(host, ":")
+	if portLoc > -1 {
+		hostname = host[:portLoc]
+	}
 	name := strings.Replace(hostname, "."+cfg.Domain, "", -1)
 	return name
 }

@@ -1,6 +1,6 @@
 
 Network: redzilla
-APIPort: :3000
+APIPort: :3001
 
 Domain: redzilla.localhost
 
